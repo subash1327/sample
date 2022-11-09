@@ -2,12 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sample/constants/consts.dart';
 import 'package:sample/ui/route/routes.dart';
+import 'package:sample/utils/navigation_utils.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   void goToCart(BuildContext context){
-    Navigator.of(context).pushNamed(Routes.cart);
+    context.push(Routes.cart);
   }
 
   @override
